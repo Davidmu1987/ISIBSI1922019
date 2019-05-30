@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Mayusculas y Minusculas</title>
+
+<script type="text/javascript">
+function info(cadena) {
+  
+var cadena= prompt("Introduce una cadena de caracteres");
+
+  var resultado = "La cadena \""+cadena+"\" ";
+
+  // Comprobar mayúsculas y minúsculas
+  if(cadena == cadena.toUpperCase()) {
+    resultado += " está formada sólo por mayúsculas";
+  }
+  else if(cadena == cadena.toLowerCase()) {
+    resultado += " está formada sólo por minúsculas";
+  }
+  else {
+    resultado += " está formada por mayúsculas y minúsculas";
+  }
+
+  return resultado;
+}
+
+
+</script>
+</head>
+
+<body>
+</body>
+</html>
