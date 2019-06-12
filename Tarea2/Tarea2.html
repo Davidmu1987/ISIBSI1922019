@@ -1,31 +1,21 @@
-<form action ="/my-handling-form-page" method = "post">
-  <div>
-    <label for="name">Nombre de usuario:</label>
-    <input type="text" id="name" />
-  </div>
 
-  <div>
-    <label for="pass">Contraseña:</label>
-    <input type="text" id="pass" />
-  </div>
+<html>
+<head>
+</head>
+<body>
+<form action ="procesar_datos.php" method = "post">
 
- <div>
-    <label for="email">Email:</label>
-    <input type="text" id="email" />
-  </div>
+   Nombre de usuario:<input type="text" id="name"></input><br/>
+   Contraseña:<input type="password" id="pass" pattern="[A-Za-z][A-Za-z0-9]*[0-9][A-Za-z0-9]*"></input><br/>
+   Email:<input type="text" id="email"></input><br/>
+   Fecha nacimiento: <input type="date" name="cumpleanios"    step="1" min="1900-01-01" max=sysdate value="1900-01-01"></input><br/>
+   Campo Oculto:<input type="text" id="campodefault"></input><br/>
 
-<div>
-    <label for="fecnacimiento">Fecha de Nacimiento:</label>
-    <input type="text" id="fecnacimiento" />
-  </div>
-
-<div>
-    <label for="campodefault">Campo Oculto:</label>
-    <input type="text" id="campodefault" />
-  </div>
 
 <div>
   <button type="sumit"> Enviar sus datos</button>
   </div>
 
 </form>
+</body>
+</html>
